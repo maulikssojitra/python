@@ -31,7 +31,7 @@ while should_continue:
 
     encrypt(text, shift, direction)
     
-    result = input("Type 'yes' if you want to run again. Othrwise type 'no'. \n")
+    result = input("Type 'yes' if you want to run again. Otherwise type 'no'. \n")
     if result == 'no':
         should_continue = False
         print("Goodbye")

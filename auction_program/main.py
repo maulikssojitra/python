@@ -20,4 +20,5 @@ for key in name_list:
         max_amount = name_list[key]
         bider_name = key
 
+
 print(f"The winner is {bider_name} with a bid of ${max_amount}.")

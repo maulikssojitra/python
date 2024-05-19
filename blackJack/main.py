@@ -20,6 +20,7 @@ def calculate_cards(cards):
     
     return sum(cards)
 
+
 def compare(user_score, computer_score):
     if user_score == computer_score:
         return "Draw"
@@ -35,6 +36,7 @@ def compare(user_score, computer_score):
         return "You win"
     else:
         return "You lose"
+
 
 def play_game():
     user_cards = []
