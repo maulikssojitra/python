@@ -15,26 +15,25 @@ lives = 6
 isFalse = False
 while not isFalse:
     guess = input("guess the latter : ").lower()
-    
+
     if guess in display:
-        print(f"You've alredy guessed {guess}")
-    
+        print(f"You've already guessed {guess}")
+
     for i in range(len(chosen_word)):
         if chosen_word[i] == guess:
             display[i] = guess
-    
+
     if guess not in chosen_word:
         print(f"You guessed {guess}, that's not in word. You lose a life.")
         lives -= 1
         if lives == 0:
             isFalse = True
             print("You lose")
-        
+
     print(display)
-    
+
     if "_" not in display:
         isFalse = True
         print("You win")
-    
+
     print(stages[lives])
-    
